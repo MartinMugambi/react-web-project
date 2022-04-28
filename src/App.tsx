@@ -1,11 +1,11 @@
 import React from 'react';
+import { User } from './components/users/user';
 
-import UsersTable from './components/UserTable';
- 
+
 
 function App() {
   return (
-  <UsersTable />
+  <User />
   );
 }
 
