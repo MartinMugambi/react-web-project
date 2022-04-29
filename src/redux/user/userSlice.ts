@@ -53,7 +53,10 @@ const userSlice = createSlice({
     reducers: {
       postId: (state, action:PayloadAction<number>) =>{
           state.id = action.payload
-      }
+      },
+      username: (state, action:PayloadAction<string>) =>{
+       state.name = action.payload
+      }    
     },
 
     extraReducers: (builder) =>{
@@ -77,5 +80,5 @@ const userSlice = createSlice({
     }
 })
 
-export const {postId} = userSlice.actions
+export const {postId, username} = userSlice.actions
  export default userSlice.reducer
