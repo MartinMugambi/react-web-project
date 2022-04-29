@@ -34,7 +34,7 @@ const dispatch = useDispatch();
 
   const[id, setId]=useState<number>(0)
 
-  
+  const[name, setName] = useState<string>("")
   
 
     const userData:Users[]  = useSelector((state:RootState) => state.user.data)
@@ -47,7 +47,7 @@ const dispatch = useDispatch();
              <h1>Users</h1>
         <article className="details">
          {loading && <h1>Loading....</h1>}
-         {userData.map(users => <User key={users.id} name ={users.name} username ={users.username} id= {users.id} setId = {setId} postId = {id} />)}
+         {userData.map(users => <User key={users.id} name ={users.name} username ={users.username} id= {users.id} setId = {setId} postId = {id} setName ={setName} />)}
         </article>
         </section>
     );
