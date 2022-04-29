@@ -1,13 +1,27 @@
-import { Post } from './components/posts/post';
-import { UserList } from './components/userList/userList';
-import { User } from './components/users/user';
+import React from 'react';
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+const LazyUserList =  React.lazy(()=> import('./components/userList/userList')) 
+const LazyPostList = React.lazy(()=> import('./components/postList/post'))
 
 function App() {
   return (
+    <Router>
    <>
-   <UserList />
-   {/* <Post /> */}
+    <Routes>
+      <Route path ='/' element={
+      <React.Suspense fallback ="loading">
+        <LazyUserList />
+        </React.Suspense>
+      }  />
+
+      <Route path='post' element={
+      <React.Suspense fallback ="loading">
+        <LazyPostList />
+        </React.Suspense>
+      }  /> 
+    </Routes>
    </>
+   </Router>
   );
 }
 
