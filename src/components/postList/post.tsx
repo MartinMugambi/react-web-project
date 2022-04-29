@@ -21,6 +21,7 @@ const PostList = () =>{
     const postData: PostData[] = useSelector((state: RootState) => state.post.data);
     const loading = useSelector((state:RootState) => state.post.loading);
     const id = useSelector((state:RootState) => state.user.id);
+    const username  = useSelector((state:RootState) => state.user.name);
 
     const filteredPost = postData.filter(post => post.userId === id)
 
@@ -32,7 +33,7 @@ const PostList = () =>{
     return (
         <section className="">
             <p>Back to HomePage</p>
-            <h3>Posts of Martin</h3>
+            <h3>Posts of {username}</h3>
         <article className="details">
             {filteredPost.map(post => <Post  key={post.id}  title = {post.title} body ={post.body}/>)}
         </article>
