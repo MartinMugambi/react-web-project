@@ -9,13 +9,13 @@ function App() {
    <>
     <Routes>
       <Route path ='/' element={
-      <React.Suspense fallback ="loading">
+      <React.Suspense fallback ="loading...">
         <LazyUserList />
         </React.Suspense>
       }  />
 
       <Route path='post' element={
-      <React.Suspense fallback ="loading">
+      <React.Suspense fallback ="loading...">
         <LazyPostList />
         </React.Suspense>
       }  /> 
