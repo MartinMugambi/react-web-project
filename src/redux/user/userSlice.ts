@@ -1,5 +1,4 @@
-import {createSlice, createAsyncThunk} from "@reduxjs/toolkit"
-
+import {createSlice, createAsyncThunk, PayloadAction} from "@reduxjs/toolkit"
 
 interface User{
     id: number
@@ -23,15 +22,20 @@ interface UserData{
   loading: boolean
   data: User[]
   error: boolean | string
-
+  id: number
+  name: string
 }
 
-const initialState:UserData = {
+ const initialState:UserData = {
     loading: true,
     data: [],
     error: false,
+    id: 0,
+    name: ""
 }
 
+
+export const {id} = initialState
 
 export const fetchUserData: any=  createAsyncThunk("user/fetchData",async () => {
 
@@ -47,28 +51,31 @@ const userSlice = createSlice({
     initialState,
     
     reducers: {
-
+      postId: (state, action:PayloadAction<number>) =>{
+          state.id = action.payload
+      }
     },
 
     extraReducers: (builder) =>{
         builder.addCase(fetchUserData.pending, (state, {payload})=>{
-            state.loading = true
-            state.data = []
-            state.error = false
+            state.loading = true;
+            state.data = [];
+            state.error = false;
         });
 
         builder.addCase(fetchUserData.fulfilled, (state, {payload})=>{
-          state.loading= false,
-          state.data = payload
-          state.error = false
+          state.loading= false;
+          state.data = payload;
+          state.error = false;
         });
 
         builder.addCase(fetchUserData.rejected, (state, {payload})=>{
-            state.loading = false,
-            state.data = [],
-            state.error = payload
+            state.loading = false;
+            state.data = [];
+            state.error = payload;
         })
     }
 })
 
+export const {postId} = userSlice.actions
  export default userSlice.reducer
