@@ -1,0 +1,8 @@
+.details{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-auto-rows: 170px;
+    grid-gap: 35px;
+    place-content: center;
+    margin-top: 40px;
+   }
