@@ -1,12 +1,29 @@
 import  './user.css';
 import {PencilAltIcon} from '@heroicons/react/solid'
+import {useDispatch} from "react-redux"
+import { postId } from '../../redux';
+ import {useNavigate} from "react-router-dom"
 
 interface  Props{
     name: string
     username: string
+    id: number
+    postId: number
+    setId: (id: number) => void
 }
 
 export const User = (props: Props) =>{
+  
+const dispatch = useDispatch();
+const navigate = useNavigate()
+
+  const handleClick =() =>{
+      props.setId(props.id);
+      dispatch(postId(props.id));
+      navigate('post')
+  }
+
+  console.log(props.postId);
   
     return (
          <section className='card'>
@@ -16,7 +33,7 @@ export const User = (props: Props) =>{
            </article>
             <p className='card__title'>@{props.username}</p>
            <article className='card__button' >
-           <button className='card__btn'>Show Post</button>
+           <button className='card__btn' onClick={handleClick}>Show Post</button>
            </article>
          </section>
     );
