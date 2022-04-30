@@ -56,7 +56,7 @@ const userSlice = createSlice({
       },
       username: (state, action:PayloadAction<string>) =>{
        state.name = action.payload
-      }    
+      }   
     },
 
     extraReducers: (builder) =>{
@@ -75,7 +75,7 @@ const userSlice = createSlice({
         builder.addCase(fetchUserData.rejected, (state, {payload})=>{
             state.loading = false;
             state.data = [];
-            state.error = payload;
+            state.error = payload; 
         })
     }
 })
