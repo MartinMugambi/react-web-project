@@ -25,11 +25,7 @@ const PostList = () =>{
 
     const filteredPost = postData.filter(post => post.userId === id)
 
-    console.log(filteredPost);
     
-    console.log("id is", id);
-    
-
     return (
         <section className="">
             <p>Back to HomePage</p>
