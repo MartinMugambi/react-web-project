@@ -10,8 +10,7 @@ export const Post = (props:Props) =>{
         <section className='post'>
            <article className='post__info'>
               <h4>{props.title}</h4>
-              <p>{props.body}</p>
-
+              <p data-testid= "body">{props.body}</p>
            </article>
         </section>
     );
