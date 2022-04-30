@@ -42,9 +42,16 @@ const dispatch = useDispatch();
  
     const postData = useSelector((state:RootState) => state.post.data);
     
+   const apartment = userData.filter(user => user.address.suite.includes("Apt")).length;
+   const suite = userData.filter(user => user.address.suite.includes("Suite")).length;
+
     return (
          <section>
              <h1>Users</h1>
+             <article>
+                 <h5>Number of users living in a Apartment <span data-testid="apartment">{apartment}</span> </h5> 
+                 <h5>Number of users living in a suite <span data-testid="suite">{suite}</span></h5>
+             </article>
         <article className="details">
          {loading && <h1>Loading....</h1>}
          {userData.map(users => <User key={users.id} name ={users.name} username ={users.username} id= {users.id} setId = {setId} postId = {id} setName ={setName} />)}
