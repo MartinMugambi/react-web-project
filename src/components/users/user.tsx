@@ -31,9 +31,9 @@ const navigate = useNavigate()
          <section className='card'>
            <article className='card__details'>
                <h1>{props.name}</h1>
-               <PencilAltIcon  className='card__icon'/>
+               <PencilAltIcon  className='card__icon' data-testid="icon"/>
            </article>
-            <p className='card__title'>@{props.username}</p>
+            <p className='card__title' data-testid ="username">@{props.username}</p>
            <article className='card__button' >
            <button className='card__btn' onClick={handleClick}>Show Post</button>
            </article>
