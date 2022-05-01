@@ -4,6 +4,7 @@ import { User } from "../users/user";
 import { useEffect, useState } from 'react';
 import  {useDispatch} from 'react-redux'
 import { fetchUserData } from '../../redux';
+import {TailSpin} from "react-loader-spinner"
 import './userList.css'
 
 interface Users{
@@ -47,13 +48,13 @@ const dispatch = useDispatch();
 
     return (
          <section>
-             <h1>Users</h1>
-             <article>
-                 <h5>Number of users living in a Apartment <span data-testid="apartment">{apartment}</span> </h5> 
-                 <h5>Number of users living in a suite <span data-testid="suite">{suite}</span></h5>
+               <h1>Users</h1>
+             <article className="user__info">
+                 <p>Number of users living in a Apartment: <span data-testid="apartment">{apartment}</span> </p> 
+                 <p>Number of users living in a suite: <span data-testid="suite">{suite}</span></p>
              </article>
         <article className="details">
-         {loading && <h1>Loading....</h1>}
+         {loading && <TailSpin height={100} width = {100} color ="purple" ariaLabel="loading" />}
          {userData.map(users => <User key={users.id} name ={users.name} username ={users.username} id= {users.id} setId = {setId} postId = {id} setName ={setName} />)}
         </article>
         </section>
