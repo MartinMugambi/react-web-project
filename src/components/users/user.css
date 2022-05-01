@@ -25,11 +25,23 @@
      margin-top: 5px;
      font-family: var(--primary-font);
      padding: 10px;
+     cursor: pointer;
  }
 
- .card__details > h1 {
-     font-size: 1.3rem;
+.card__input--false{
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+ .card__input {
+     border: medium solid plum;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 1.2rem;
  }
+
 
  .card__icon{
     width: 25px;
