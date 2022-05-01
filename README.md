@@ -1,6 +1,6 @@
-# Kysok-Web-App
-![react-project](/screens/poster.png "react-project")
-[LIVE PREVIEW](https://kysok-cd931.web.app/)
+# React-web-project
+![react-project](/screens/home.png "react-project")
+[LIVE PREVIEW](https://react-web-project-e48de.web.app//)
 
 ## View on Mobile
 <img src="screens/frame.png" width="200"/>  
@@ -15,7 +15,7 @@ Scan QR Code to View WebApp on Mobile
   - [Jest](https://jestjs.io/) A delightful JavaScript Testing Framework with a focus on simplicity.
   - [Github-Actions](https://github.com/features/actions) (CI/CD) platform that allows you to automate your   build, test, and deployment pipeline
 
-  - State-management
+- State-management
 
   - [Redux Toolkit](https://redux-toolkit.js.org/introduction/getting-started) - redux version for production
 
@@ -60,8 +60,8 @@ yarn install
 yarn run start
 ```
 
-Open [http://localhost:300](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Deployment on Firebase
 
-The project has been deployed to Firebase and here is the link: [kysok](https://kysok-cd931.web.app/)
+The project has been deployed to Firebase using Github action CI/CD and here is the link: [react-web-project](https://react-web-project-e48de.web.app/)
