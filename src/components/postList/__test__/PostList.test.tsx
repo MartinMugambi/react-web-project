@@ -2,12 +2,14 @@ import {screen, render} from '@testing-library/react';
 import PostList from '../post';
 import {Provider} from "react-redux"
 import { store } from '../../../redux/store';
-
+import {BrowserRouter as Router} from "react-router-dom"
 const MockPostList = () =>{
     return (
+        <Router>
         <Provider store={store}>
             <PostList />
         </Provider>
+        </Router>
     ); 
 }
 
