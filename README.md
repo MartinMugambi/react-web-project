@@ -3,17 +3,17 @@
 [LIVE PREVIEW](https://react-web-project-e48de.web.app//)
 
 ## View on Mobile
-<img src="screens/frame.png" width="200"/>  
+<img src="screens/qrcode.png" width="200"/>  
 Scan QR Code to View WebApp on Mobile
 
 ## Technologies used
 - Technologies used
-  - [React](https://reactjs.org/) A JavaScript library for building user interfaces
-  - [CSS](https://www.w3schools.com/css/) A stylesheet language used to for styling
-  - [Typescript](https://www.typescriptlang.org/) Strongly typed language for safe incontractly to using Javasript
-  - [Docker](https://www.docker.com/) A free and open-source containerization platform.
-  - [Jest](https://jestjs.io/) A delightful JavaScript Testing Framework with a focus on simplicity.
-  - [Github-Actions](https://github.com/features/actions) (CI/CD) platform that allows you to automate your   build, test, and deployment pipeline
+  - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+  - [CSS](https://www.w3schools.com/css/) - A stylesheet language used to for styling
+  - [Typescript](https://www.typescriptlang.org/) - Strongly typed language for safe incontractly to using Javasript
+  - [Docker](https://www.docker.com/) - A free and open-source containerization platform.
+  - [Jest](https://jestjs.io/)- A delightful JavaScript Testing Framework with a focus on simplicity.
+  - [Github-Actions](https://github.com/features/actions)-  (CI/CD) platform that allows you to automate your   build, test, and deployment pipeline
 
 - State-management
 
