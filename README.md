@@ -1,20 +1,67 @@
-## React Project
+# Kysok-Web-App
+![react-project](/screens/poster.png "react-project")
+[LIVE PREVIEW](https://kysok-cd931.web.app/)
 
-The goal of this small project is to create a small webApp displaying users and their related posts (data are located on [jsonplaceholder](https://jsonplaceholder.typicode.com)). 
+## View on Mobile
+<img src="screens/frame.png" width="200"/>  
+Scan QR Code to View WebApp on Mobile
 
-Use this project, which has already yarn configured and the table of users implemented. The architecture of the project is up to you. Please code as you would do in your everyday work.
+## Technologies used
+- Technologies used
+  - [React](https://reactjs.org/) A JavaScript library for building user interfaces
+  - [CSS](https://www.w3schools.com/css/) A stylesheet language used to for styling
+  - [Typescript](https://www.typescriptlang.org/) Strongly typed language for safe incontractly to using Javasript
+  - [Docker](https://www.docker.com/) A free and open-source containerization platform.
+  - [Jest](https://jestjs.io/) A delightful JavaScript Testing Framework with a focus on simplicity.
+  - [Github-Actions](https://github.com/features/actions) (CI/CD) platform that allows you to automate your   build, test, and deployment pipeline
 
-#### Specifications
+  - State-management
 
-- Add the option to fetch each user posts on [jsonplaceholder](https://jsonplaceholder.typicode.com) and display them with their user.
-- The name of each user should be editable, and should send the update to the server (note that the update is faked on jsonplaceholder).
-- Display the number of users living in an Appt, and in a Suite (field address.suite)
+  - [Redux Toolkit](https://redux-toolkit.js.org/introduction/getting-started) - redux version for production
 
-##### Rules
+- UI
 
-- add spinners while information is loading
-- use open-sourced tools
-- utilize any css method (sass, less, css modules, bootstrap, MUI, ...)
-- use Redux or any modern state management module
-- split the application into different pages
-- add tools typically used in a development environment (linters, code formatter, ...)
+  - [react-loader-spinner](https://www.npmjs.com/package/react-loader-spinner) - for loader animations
+
+### Objective
+At the end of the task here are the objectives
+- [x] add spinners while information is loading.
+- [x] use open-sourced tools.
+- [x] utilize any css method (sass, less, css modules, bootstrap, MUI, ...).
+- [x] use Redux or any modern state management module 
+- [x] split the application into different pages 
+- [x] add tools typically used in a development environment (linters, code formatter, ...)
+
+
+## Getting Started
+
+First, run the development server:
+
+1. Clone the project
+
+```bash
+git clone https://github.com/MartinMugambi/react-web-project.git
+```
+
+2. Install dependecies
+
+```bash
+yarn install
+```
+3. Change directory
+
+```bash
+ cd react-web-project
+```
+
+4. Run the application
+
+```bash
+yarn run start
+```
+
+Open [http://localhost:300](http://localhost:3000) with your browser to see the result.
+
+## Deployment on Firebase
+
+The project has been deployed to Firebase and here is the link: [kysok](https://kysok-cd931.web.app/)
