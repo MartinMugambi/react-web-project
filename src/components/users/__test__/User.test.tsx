@@ -25,12 +25,7 @@ beforeEach(()=>{
 
 describe("User Component Test", () =>{
 
-    test("should render heading", () =>{
-
-        const headingElement = screen.getByRole("heading");
-        expect(headingElement).toBeInTheDocument();
-    })
-
+     
     test("should render button text", ()=>{
 
         const buttonElement = screen.getByRole("button");
@@ -49,9 +44,37 @@ describe("User Component Test", () =>{
         expect(usernameElement).toBeVisible();
     })
 
+    test("should be able to change input value", () =>{
+
+        const inputElement = screen.getByTestId("input");
+        fireEvent.change(inputElement, {target: { value: "title"}});
+    })
+
+    test("input should be disabled on initial render", () =>{
+
+        const inputElement = screen.getByTestId("input");
+        expect(inputElement).toBeDisabled();
+    })
+
+    test("input value should be disabled after click", ()=>{
+
+        const inputElement = screen.getByTestId("input");
+        fireEvent.click(inputElement)
+        expect(inputElement).toBeDisabled();
+    })
+
     test("should render icon", () =>{
 
         const iconelement = screen.getByTestId("icon")
         expect(iconelement).toBeInTheDocument();
+    })
+
+    test("icon should be clickable", ()=>{
+
+        const iconElement = screen.getByTestId("icon");
+
+        fireEvent.click(iconElement);
+
+        expect(iconElement).toBeEnabled();
     })
 })
