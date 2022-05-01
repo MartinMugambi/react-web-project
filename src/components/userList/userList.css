@@ -1,3 +1,27 @@
+section > h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.user__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+.user__info > p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 370px;
+    margin-left: 100px;
+}
+
+.user__info > p > span {
+    color: purple;
+}
 .details{
  display: grid;
  grid-template-columns: repeat(3, 350px);
