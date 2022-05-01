@@ -20,13 +20,13 @@ const dispatch = useDispatch();
 
   const[id, setId]=useState<number>(0)
 
-  const[name, setName] = useState<string>("")
+  const[, setName] = useState<string>("")
   
 
     const userData:Users[]  = useSelector((state:RootState) => state.user.data)
     const loading = useSelector((state:RootState) => state.user.loading);
  
-    const postData = useSelector((state:RootState) => state.post.data);
+ 
     
    const apartment = userData.filter(user => user.address.suite.includes("Apt")).length;
    const suite = userData.filter(user => user.address.suite.includes("Suite")).length;
