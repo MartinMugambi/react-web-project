@@ -55,7 +55,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
-      uses: w9jds/firebase-action@master
+      uses:  mohammed-atif/firebase-publish-react@v1.0
         with:
-          
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}  
