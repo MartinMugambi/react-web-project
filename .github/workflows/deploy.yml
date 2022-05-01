@@ -41,18 +41,22 @@ jobs:
     - run: yarn run test
 
   deploy:
-    name: Deploy
-    needs: unit-tests
+    needs:  unit-tests
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+
     steps:
-        uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: yarn install
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: yarn install
+    - run: yarn run test  
+      uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
         env:
