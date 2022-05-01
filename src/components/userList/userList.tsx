@@ -5,25 +5,10 @@ import { useEffect, useState } from 'react';
 import  {useDispatch} from 'react-redux'
 import { fetchUserData } from '../../redux';
 import {TailSpin} from "react-loader-spinner"
+import {User as Users} from '../../types/types' 
 import './userList.css'
 
-interface Users{
-  id: number
-  name: string
-  email: string
-  username: string
-  address: {
-      street: string
-      suite: string
-      city: string
-      zipcode: string
-      geo: {
-          lat: string
-          lng: string
-      }
-  }
-
-}
+ 
  const UserList = () =>{
 
 const dispatch = useDispatch();
