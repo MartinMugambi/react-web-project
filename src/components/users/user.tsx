@@ -60,7 +60,7 @@ const navigate = useNavigate()
     return (
          <section className='card'>
            <article className='card__details'>
-              <input type="text" value={name} disabled={edit} className ={ edit ? "card__input--false": "card__input"} onChange ={changeNameInput}  onKeyDown ={submitInputField} />
+              <input type="text" value={name} disabled={edit} className ={ edit ? "card__input--false": "card__input"} onChange ={changeNameInput}  onKeyDown ={submitInputField} data-testid= "input" />
                <PencilAltIcon  className='card__icon' data-testid="icon"  onClick={makeEditable}  />
            </article>
             <p className='card__title' data-testid ="username">@{props.username}</p>
