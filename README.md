@@ -1,9 +1,9 @@
 # React-web-project
-![react-project](/screens/home.png "react-project")
+![react-project](/images/home.png "react-project")
 [LIVE PREVIEW](https://react-web-project-e48de.web.app//)
 
 ## View on Mobile
-<img src="screens/qrcode.png" width="200"/>  
+<img src="images/qrcode.png" width="200"/>  
 Scan QR Code to View WebApp on Mobile
 
 ## Technologies used
