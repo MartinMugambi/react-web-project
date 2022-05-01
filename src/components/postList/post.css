@@ -1,4 +1,19 @@
 
+section > p{
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+}
+
+section > p:hover{
+    opacity: 0.6;
+}
+
+section > h3 {
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
 .details{
     display: grid;
     grid-template-columns: repeat(3, 350px);
@@ -7,3 +22,99 @@
     place-content: center;
     margin-top: 40px;
    }
+
+   @media  screen and (min-width: 320px) and (max-width: 479px){
+    .details{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section > p{
+        font-weight: 600;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 0.8rem;
+    }
+
+    section > h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+   }
+
+   @media screen and (min-width: 480px) and (max-width: 767px) {
+    .details{
+    display: grid;
+    grid-template-columns: repeat(2, 270px);
+    grid-auto-rows: 170px;
+    grid-gap: 25px;
+    place-content: center;
+    margin-top: 20px;
+    }
+
+    section > p{
+        font-weight: 600;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+   
+    section > h3 {
+        text-align: center;
+        margin-top: 10px;
+       
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .details{
+        display: grid;
+        grid-template-columns: repeat(2, 270px);
+        grid-auto-rows: 250px;
+        grid-gap: 15px;
+        place-content: center;
+        margin-top: 20px;
+        }
+
+        section > p{
+            font-weight: 600;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+       
+        section > h3 {
+            text-align: center;
+            margin-top: 10px;
+            color: green;
+           
+        }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .details{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-auto-rows: 250px;
+        grid-gap: 25px;
+        place-content: center;
+        margin-top: 20px;
+        }
+
+        section > p{
+            font-weight: 600;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+       
+        section > h3 {
+            text-align: center;
+            margin-top: 10px;
+            color: rebeccapurple;
+           
+        }
+    }      
