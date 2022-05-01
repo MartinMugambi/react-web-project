@@ -1,19 +1,5 @@
 import {createSlice, createAsyncThunk} from "@reduxjs/toolkit"
-import { id } from "../user/userSlice"
-
-interface PostData{
-    userId: number
-    id:number
-    title: string
-    body: string
-}
-
-
-interface Post{
-    loading: boolean
-    data:  PostData[]
-    error: boolean | string
-}
+import {Post} from '../../types/types'
 
 const initialState:Post  ={
     loading: true,
