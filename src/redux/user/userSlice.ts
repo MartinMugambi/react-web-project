@@ -1,30 +1,7 @@
 import {createSlice, createAsyncThunk, PayloadAction} from "@reduxjs/toolkit"
 
-interface User{
-    id: number
-    name: string
-    email: string
-    username: string
-    address: {
-        street: string
-        suite: string
-        city: string
-        zipcode: string
-        geo: {
-            lat: string
-            lng: string
-        }
-    }
-  
-  }
+import {UserData} from '../../types/types'
 
-interface UserData{
-  loading: boolean
-  data: User[]
-  error: boolean | string
-  id: number
-  name: string
-}
 
  const initialState:UserData = {
     loading: true,
@@ -35,7 +12,6 @@ interface UserData{
 }
 
 
-export const {id} = initialState
 
 export const fetchUserData: any=  createAsyncThunk("user/fetchData",async () => {
 
