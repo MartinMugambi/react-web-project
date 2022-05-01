@@ -15,7 +15,7 @@ beforeEach(()=>{
     render(<MockUserList />)
 })
 
-describe("Post Component Test", () =>{
+describe("UserList Component Test", () =>{
 
  test("should render title Text", () =>{
 
@@ -26,7 +26,7 @@ describe("Post Component Test", () =>{
  test("should display headings", () =>{
   
     const headingElements = screen.queryAllByRole("heading");
-    expect(headingElements.length).toBeGreaterThan(1)
+    expect(headingElements.length).toBe(1)
  });
 
  test("should render apartment as number", async () =>{
