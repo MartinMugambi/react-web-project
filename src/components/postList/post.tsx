@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import {useSelector, useDispatch} from 'react-redux'
 import { fetchPost } from "../../redux";
 import { RootState } from "../../redux/store";
