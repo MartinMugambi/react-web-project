@@ -38,7 +38,7 @@ At the end of the task here are the objectives
 
 ## Github Action (CI/CD)
 
-<img src="images/actions.png" width="600"/> 
+<img src="images/actions.png" width="900"/> 
 
 ## Getting Started
 
