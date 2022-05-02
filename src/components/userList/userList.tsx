@@ -22,13 +22,15 @@ const dispatch = useDispatch();
 
   const[, setName] = useState<string>("")
   
-
+      //selecting post data from redux store
     const userData:Users[]  = useSelector((state:RootState) => state.user.data)
+      //selecting loading status from redux store
     const loading = useSelector((state:RootState) => state.user.loading);
  
  
-    
+   //filtering data to check if it includes Apt   
    const apartment = userData.filter(user => user.address.suite.includes("Apt")).length;
+   //filtering data to check if it includes Apt  
    const suite = userData.filter(user => user.address.suite.includes("Suite")).length;
 
     return (

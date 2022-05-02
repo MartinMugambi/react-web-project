@@ -1,3 +1,5 @@
+
+// user data from API type
 export interface User{
     id: number
     name: string
