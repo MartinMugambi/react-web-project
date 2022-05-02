@@ -34,7 +34,7 @@ At the end of the task here are the objectives
 
 ## Technologies used
 
-<img src="images/test.png" width="200"/> 
+<img src="images/test.png" width="600"/> 
 
 ## Getting Started
 
