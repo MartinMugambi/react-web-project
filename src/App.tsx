@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+//Lazy Loading components to make them loading information faster
 const LazyUserList =  React.lazy(()=> import('./components/userList/userList')) 
 const LazyPostList = React.lazy(()=> import('./components/postList/post'))
 
