@@ -32,6 +32,9 @@ At the end of the task here are the objectives
 - [x] split the application into different pages 
 - [x] add tools typically used in a development environment (linters, code formatter, ...)
 
+## Technologies used
+
+<img src="images/test.png" width="200"/> 
 
 ## Getting Started
 
