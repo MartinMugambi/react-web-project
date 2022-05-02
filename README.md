@@ -36,6 +36,10 @@ At the end of the task here are the objectives
 
 <img src="images/test.png" width="600"/> 
 
+## Github Action (CI/CD)
+
+<img src="images/actions.png" width="600"/> 
+
 ## Getting Started
 
 First, run the development server:
