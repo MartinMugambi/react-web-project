@@ -1,0 +1,24 @@
+
+.post__info{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 20px;
+    padding: 10px;
+    border: medium solid plum;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+
+    .post__info{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 20px;
+        padding: 10px;
+        border: medium solid plum;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+ 

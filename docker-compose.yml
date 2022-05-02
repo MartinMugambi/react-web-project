@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  react-web-project:
+    build:
+      context: ./react-web-project
+      dockerfile: Dockerfile
+    container_name: react
+    ports:
+      -5000:5000
+    volumes:
+      -'./react-web-app'
+      -'/usr/app/node_modules'
